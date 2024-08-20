@@ -18,6 +18,7 @@
         extend: {
           colors: {
             clifford: '#da373d',
+            'bg-primary': '#E76F51',
           },
 
           fontFamily: {
@@ -28,14 +29,21 @@
     }
   </script>
 
+
+  <style>
+    html {
+      background-color: white !important;
+    }
+  </style>
+
 </head>
-<body class="font-poppins">
-  <header>
-    <nav>
-      <div class="navbar bg-base-100">
-        <div class="navbar-start">
+<body class="bg-white font-poppins">
+  <header class="mx-5 lg:mx-36 mb-32">
+    <nav class="px-0 py-5 lg:py-8">
+      <div class="navbar bg-transparent">
+        <div class="navbar-start text-black">
           <div class="dropdown">
-            <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 class="h-5 w-5"
@@ -46,56 +54,117 @@
                   stroke-linecap="round"
                   stroke-linejoin="round"
                   stroke-width="2"
-                  d="M4 6h16M4 12h16M4 18h7" />
+                  d="M4 6h16M4 12h8m-8 6h16" />
               </svg>
             </div>
             <ul
               tabindex="0"
-              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+              class="menu menu-sm dropdown-content bg-transparent rounded-box z-[1] mt-3 w-52 p-2 shadow">
               <li><a>Home</a></li>
-              <li><a>Portfolio</a></li>
-              <li><a>About</a></li>
+              <li><a>Shop</a></li>
+              <li><a>News</a></li>
+              <li><a>Contact</a></li>
             </ul>
           </div>
+          <a class="text-2xl lg:text-3xl font-bold">Bike Dekho</a>
         </div>
-        <div class="navbar-center">
-          <a class="btn btn-ghost text-xl">Biker Zone</a>
+        <div class="navbar-center text-black  hidden lg:flex">
+          <ul class="menu menu-horizontal text-base font-medium px-1">
+            <li><a>Home</a></li>
+            <li><a>Shop</a></li>
+            <li><a>News</a></li>
+            <li><a>Contact</a></li>
+          </ul>
         </div>
         <div class="navbar-end">
-          <button class="btn btn-ghost btn-circle">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="h-5 w-5"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor">
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-            </svg>
-          </button>
-          <button class="btn btn-ghost btn-circle">
-            <div class="indicator">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-5 w-5"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor">
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
-              </svg>
-              <span class="badge badge-xs badge-primary indicator-item"></span>
-            </div>
-          </button>
+          <a class="btn bg-[#E76F51] border-none text-white text-xl font-semibold rounded-md py-3 px-8">Login</a>
         </div>
       </div>
     </nav>
+
+    <!-- slider hero -->
+     <section>
+      <div class="carousel w-full">
+        <div id="slide1" class="carousel-item relative w-full bg-[rgba(231,111,81,0.1)] rounded-sm">
+          <div class="grid grid-cols-1 md:grid-cols-2 justify-between items-center gap-10 lg:gap-0 p-5 md:p-10 lg:p-20">
+            <!-- text contant -->
+            <div class="lg:w-[475px]">
+              <h1 class="text-4xl lg:text-6xl font-bold text-black">Ride-on R15 V4 <br>with Smile</h1>
+              <p class="text-gray-900 mt-4 mb-8">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+              <button class="btn bg-[#E76F51] border-none text-white text-xl font-semibold rounded-md py-3 px-8">Purchase</button>
+            </div>
+
+            <!-- image contant -->
+             <div class="lg:w-[400px]">
+              <img class="w-full" src="./Image/bike1.png"class="w-full" />
+             </div>
+          </div>
+
+
+          <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+            <a href="#slide4" class="text-3xl text-[#E76F51]">❮</a>
+            <a href="#slide2" class="text-3xl text-[#E76F51]">❯</a>
+          </div>
+        </div>
+        <div id="slide2" class="carousel-item relative w-full bg-[rgba(231,111,81,0.1)] rounded-sm">
+          <div class="grid grid-cols-1 md:grid-cols-2 justify-between items-center gap-10 lg:gap-0 p-5 md:p-10 lg:p-20">
+            <!-- text contant -->
+            <div class="lg:w-[475px]">
+              <h1 class="text-4xl lg:text-6xl font-bold text-black">Ride-on R15 V4 <br>with Smile</h1>
+              <p class="text-gray-900 mt-4 mb-8">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+              <button class="btn bg-[#E76F51] border-none text-white text-xl font-semibold rounded-md py-3 px-8">Purchase</button>
+            </div>
+
+            <!-- image contant -->
+             <div class="lg:w-[400px]">
+              <img class="w-full" src="./Image/bike2.png"class="w-full" />
+             </div>
+          </div>
+          <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+            <a href="#slide1" class="text-3xl text-[#E76F51]">❮</a>
+            <a href="#slide3" class="text-3xl text-[#E76F51]">❯</a>
+          </div>
+        </div>
+        <div id="slide3" class="carousel-item relative w-full bg-[rgba(231,111,81,0.1)] rounded-sm">
+          <div class="grid grid-cols-1 md:grid-cols-2 justify-between items-center gap-10 lg:gap-0 p-5 md:p-10 lg:p-20">
+            <!-- text contant -->
+            <div class="lg:w-[475px]">
+              <h1 class="text-4xl lg:text-6xl font-bold text-black">Ride-on R15 V4 <br>with Smile</h1>
+              <p class="text-gray-900 mt-4 mb-8">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+              <button class="btn bg-[#E76F51] border-none text-white text-xl font-semibold rounded-md py-3 px-8">Purchase</button>
+            </div>
+
+            <!-- image contant -->
+             <div class="lg:w-[400px]">
+              <img class="w-full" src="./Image/bike3.png"class="w-full" />
+             </div>
+          </div>
+          <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+            <a href="#slide2" class="text-3xl text-[#E76F51]">❮</a>
+            <a href="#slide4" class="text-3xl text-[#E76F51]">❯</a>
+          </div>
+        </div>
+        <div id="slide4" class="carousel-item relative w-full bg-[rgba(231,111,81,0.1)] rounded-sm">
+          <div class="grid grid-cols-1 md:grid-cols-2 justify-between items-center gap-10 lg:gap-0 p-5 md:p-10 lg:p-20">
+            <!-- text contant -->
+            <div class="lg:w-[475px]">
+              <h1 class="text-4xl lg:text-6xl font-bold text-black">Ride-on R15 V4 <br>with Smile</h1>
+              <p class="text-gray-900 mt-4 mb-8">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+              <button class="btn bg-[#E76F51] border-none text-white text-xl font-semibold rounded-md py-3 px-8">Purchase</button>
+            </div>
+
+            <!-- image contant -->
+             <div class="lg:w-[400px]">
+              <img class="w-full" src="./Image/bike1.png"class="w-full" />
+             </div>
+          </div>
+          <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+            <a href="#slide3" class="text-3xl text-[#E76F51]">❮</a>
+            <a href="#slide1" class="text-3xl text-[#E76F51]">❯</a>
+          </div>
+        </div>
+      </div>
+     </section>
   </header>
 
   <main></main>
